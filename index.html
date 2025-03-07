@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng 8/3</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        #quang {
+            width: 120px;
+            height: 120px;
+            border-radius: 20px;
+        }
+        #tuan {
+            width: 120px;
+            height: 120px;
+            border-radius: 20px;
+            border: dashed 2px pink;
+        }
+        #tbao {
+            width: 120px;
+            height: 200px;
+            border-radius: 20px;
+        }
+        .loichuc {
+            display: block;
+            font-family:Arial, Helvetica, sans-serif;
+            height: 400px;
+            max-height: 500px;
+            width: 400px;
+            font-weight: 10px;
+            background-image: url(./pngtree-sticky-note-cartoon-illustration-png-image_4597882.jpg);
+            z-index: 1;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 1;
+            transform: translateY(-1070px);
+            font-size: 20px;
+            line-height: 30px;
+            border: dashed 3px black;
+            border-radius: 20px;
+            overflow: scroll;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffe6f2;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        .block{
+            margin : auto auto;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            animation: fadeIn 1s;
+            position: relative;
+            z-index: 1;
+        }
+        input {
+            margin-top: 10px;
+            padding: 10px;
+            width: calc(100% - 20px);
+            border: 2px solid #ff66a3;
+            border-radius: 10px;
+            outline: none;
+        }
+        button {
+            margin-top: 10px;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            background: #ff66a3;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(255, 102, 163, 0.5);
+        }
+        button:active {
+            transform: scale(0.95);
+            box-shadow: 0 2px 5px rgba(255, 102, 163, 0.5);
+        }
+        button:hover {
+            background: #ff3385;
+        }
+        .greeting {
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #d6336c;
+            animation: fadeIn 1s;
+        }
+        .greeting.animated {
+            animation: zoomIn 1s ease-in-out;
+        }
+        .container.animate {
+            animation: pulse 1s;
+        }
+        .trang_tri, .ten_dac_biet {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            opacity: 0.8;
+            animation: noiLen linear infinite;
+        }
+        .ten_dac_biet {
+            font-size: 20px;
+            font-weight: bold;
+            color: red;
+            animation: noiLen 8s linear infinite;
+        }
+        @keyframes noiLen {
+            from { transform: translateY(100vh); opacity: 1; }
+            to { transform: translateY(-10vh); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+
+        <div class="container animate__animated animate__fadeInUp">
+            <h1 class="animate__animated animate__zoomInDown" style="color: #ff4081;">8/3 vui vẻ nhé</h1>
+            <h2 style="color: #d6336c; font-size: 24px;" class="animate__animated animate__fadeIn">Nhập tên đây đi có bất ngờ đó 🤞 </h2>
+            <input type="text" id="ten" placeholder="Nhập đây đi nhớ viết tắt đó">
+            <button id="nut" >nhấn đi !</button>
+            <!-- <p class="greeting" id="loi_chuc"></p> -->
+        </div>
+    </div>
+    <script src ="./main.js"></script>
+    <script>
+        
+        function taoTrangTri() {
+            const hinhAnh = [
+                'https://cdn-icons-png.flaticon.com/512/833/833472.png',
+                'https://cdn-icons-png.flaticon.com/512/833/833472.png',
+                'https://cdn-icons-png.flaticon.com/512/833/833472.png',
+                'https://cdn-icons-png.flaticon.com/512/3198/3198885.png',
+                'https://cdn-icons-png.flaticon.com/512/3771/3771518.png'
+            ];
+            for (let i = 0; i < 30; i++) {
+                const trangTri = document.createElement('img');
+                trangTri.src = hinhAnh[Math.floor(Math.random() * hinhAnh.length)];
+                trangTri.classList.add('trang_tri');
+                trangTri.style.left = `${Math.random() * 100}vw`;
+                trangTri.style.width = `${30 + Math.random() * 50}px`;
+                trangTri.style.height = trangTri.style.width;
+                trangTri.style.animationDuration = `${4 + Math.random() * 6}s`;
+                document.body.appendChild(trangTri);
+            }
+        }
+        taoTrangTri();
+    </script>
+</body>
+</html>
