@@ -1,5 +1,7 @@
 var ten = document.getElementById("ten");
 var button = document.querySelector("#nut");
+var container = document.querySelector(".container");
+
 button.addEventListener("click", function() {
     var dulieu = ten.value;
     var block = document.createElement("div");
@@ -7,6 +9,7 @@ button.addEventListener("click", function() {
     document.body.appendChild(block);
     if (dulieu == "Đ.N.T.Trúc") {
       block.innerHTML = '<p>Chúc Trúc < Túc > có một ngày 8/3 thật là zuii zẻ nà. Mong rằng Túc ngày càng xinh đẹp hơn và cười nhiều hơn nhee. Mong mọi điều may mắn luôn đến với Túc nè. Và quan trọng nhất là phải hạnh phúc với những gì mình có nhaa.</p>'
+      container.classList.add("an");
     } else if (dulieu == "N.N.G.Hân") {
         block.innerHTML = '<p>Nguyễn Ngọc Gia Hân - Hí lô mai vbelch , nhân ngày 8/3 anhh chúc bé anh gặp nhiều may mắn trong cuộc sống và học tập nhé, à chúc em nhiều sức khỏee nữa, nghe lời anh vô, phải biết bảo vệ sức khỏe của mình, mãii yêuu boy nhéee, anh yêu em Tên người viết: your cpink</p><img src="./b4d390bf-b4be-48bc-b31d-f98a017fd2e0.jpg" alt="" id="quang">';
     } else if (dulieu == "V.T.Uyên") {
