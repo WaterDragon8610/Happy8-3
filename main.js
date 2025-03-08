@@ -74,7 +74,7 @@ button.addEventListener("click", function() {
         var block = document.createElement("div");
         block.classList.add("loichuc");
         document.body.appendChild(block);
-        block.innerHTML = '<p>Ph Tiên Chúc ...một ngày 8/3 ngập tràn yêu thương và hạnh phúc. Mong rằng không chỉ hôm nay mà mỗi ngày trong cuộc sống, bạn đều được trân trọng, yêu thương và luôn mỉm cười rạng rỡ. Hãy tận hưởng ngày đặc biệt này theo cách tuyệt vời nhất nhé!</p>'
+        block.innerHTML = '<p>Chúc Phương Tiên một ngày 8/3 ngập tràn yêu thương và hạnh phúc. Mong rằng không chỉ hôm nay mà mỗi ngày trong cuộc sống, bạn đều được trân trọng, yêu thương và luôn mỉm cười rạng rỡ. Hãy tận hưởng ngày đặc biệt này theo cách tuyệt vời nhất nhé!</p>'
         container.classList.add("an");
     } else if (dulieu == "L.N.K.Linh") {
         var block = document.createElement("div");
