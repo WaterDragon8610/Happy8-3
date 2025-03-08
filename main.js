@@ -142,6 +142,12 @@ button.addEventListener("click", function() {
         document.body.appendChild(block);
         block.innerHTML = '<p>chúc Nhi sẽ đạt được những gì mình đã ước muốn , luôn vui vẻ và hãy tự tin rằng bản thân mình làm được nhân ngày 8/3 chúc Nhi có được một kỉ niệm thật đáng nhớ</p>'
         container.classList.add("an");
+    } else if (dulieu == "Cô Nhung") {
+        var block = document.createElement("div");
+        block.classList.add("loichuc");
+        document.body.appendChild(block);
+        block.innerHTML = '<p>Chúc cô nhung có một ngày 8/3 thật vui và ý nghĩa , chúc cô nhận được nhiều quà và có thể thực hiện được những ước mơ của mình mong cô sẽ luôn khoẻ mạnh để chứng kiến tụ em thành công trong tương lai xa , một lần nữa 8/3 chúc cô có thật nhiều may mắn 🤗 </p>'
+        container.classList.add("an");
     }
 
 
