@@ -53,7 +53,7 @@ button.addEventListener("click", function() {
         block.innerHTML = '<p>Chúc Bình (bò,lọ,...) có một ngày 8/3 vui vẻ , học hành thật suông sẻ có đc nhiều niềm vui và bớt động tay chân lại xí :))</p>'
         container.classList.add("an");
     } else if (dulieu == "N.T.Q.Trang") {
-        block.innerHTML = '<p>Chúc bạn của tôi ngày 8/3 thật hạnh phúc, cuộc sống luôn ngập tràn tiếng cười và niềm vui.</p>'
+        block.innerHTML = '<p>Chúc bạn QTrang có 1 ngày 8/3 và ngày càng vui vẻ , "đỏ" và đạt được nhiều thành tích hơn trong tương lai nhé :></p>'
         container.classList.add("an");
     } else if (dulieu == "N.T.N.Minh") {
         block.innerHTML = '<p>I wish Minh will always be happy and not cry, soon find the goal in studying to achieve the desired results. Happy 8/3 🌸</p>'
