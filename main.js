@@ -142,7 +142,7 @@ button.addEventListener("click", function() {
         document.body.appendChild(block);
         block.innerHTML = '<p>chúc Nhi sẽ đạt được những gì mình đã ước muốn , luôn vui vẻ và hãy tự tin rằng bản thân mình làm được nhân ngày 8/3 chúc Nhi có được một kỉ niệm thật đáng nhớ</p>'
         container.classList.add("an");
-    } else if (dulieu == "Cô Nhung") {
+    } else if (dulieu == "Nguyễn Thị Cẩm Nhung") {
         var block = document.createElement("div");
         block.classList.add("loichuc");
         document.body.appendChild(block);
